@@ -1,0 +1,30 @@
+#navigation {
+    font-size: 40px;
+    text-align: center;
+}
+#logo {
+    font-family: fantasy;
+    font-size: 70px;
+    text-align: center;
+    color: brown;
+}
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    font-size: 35px;
+    color: orange;
+    font-family: cursive;
+}
+h3 {
+    text-align: center;
+}
+#links {
+    text-align: center;
+}

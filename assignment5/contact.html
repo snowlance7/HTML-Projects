@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!--
+Turtle Tycoon
+Author: Gage Vail
+Date: 10/15/2016
+
+Filename: contact.html
+-->
+        <title>Contact - Turtle Tycoon</title>
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html"><img src="img/turtlelogo.png" width="75" height="75" alt="logo" align="center"></a> &nbsp;Turtle Tycoon</h1>
+<!-- Navigation -->
+            <nav>
+                <h1 style="display: inline;"><a href="index.html">Home</a></h1>
+                
+                &nbsp;&nbsp;<h1 style="display: inline;"><a href="contact.html" class="active">Contact</a></h1>
+            </nav>
+        </header>
+<!-- Page Content -->
+        <section>
+            <form action="contact.php" method="GET">
+                <fieldset>
+                    <legend><h1>Contact Information</h1></legend>
+                    <p>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname" id="firstname">
+                </p>
+                <p>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname" id="lastname">
+                </p>
+                <p>
+                    <label for="date">Date of Birth:</label>
+                    <input type="date" name="date" id="date">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </p>
+                <p>
+                    <label for="phonenumber">Phone Number:</label>
+                    <input type="text" name="phonenumber" id="phonenumber">
+                </p>
+                </fieldset>
+                <fieldset>
+                    <legend><h1>Other</h1></legend>
+                    <p>What is the best contact method we can reach you?</p>
+                    <label for="emailmethod">Email:</label>
+                    <input type="radio" name="bestmethod" id="emailmethod">
+                    <label for="phonemethod">Phone:</label>
+                    <input type="radio" name="bestmethod" id="phonemethod">
+                    <p>
+                        <label for="updates">Would you like to recieve updates on your turtle?</label>
+                        <input type="checkbox" name="updates" id="updates">
+                    </p>
+                </fieldset>
+                <input type="submit" name="submit" id="submit" value="Submit">
+            </form>
+        </section>
+    </body>
+    
+    <footer>
+        <small>&copy; Turtle Tycoon &#124; <a href="sitemap.html">Sitemap</a></small>
+    </footer>
+</html>

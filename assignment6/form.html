@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!--
+Video Revelations
+Author: Gage Vail
+Date: 10/15/2016
+
+Filename: form.html
+-->
+        <title>Video Revelations - Contact</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/formstyles.css">
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <h1 style="display: inline;" id="logo" alt="logo" align="center"><img src="img/vhslogo.png" width="75" height="75" align="center">Video Revelations<img src="img/vhslogo.png" width="75" height="75" align="center"></h1>
+            </div>
+<!-- Navigation -->
+            <div id="navigation">
+                <nav>
+                    <h1 style="display: inline;"><a href="index.html" tabindex="1">Home</a></h1>
+                    
+                    &nbsp;&nbsp;<h1 style="display: inline;"><a href="about.html" tabindex="2">About</a></h1>
+                    
+                    &nbsp;&nbsp;<h1 style="display: inline;"><a href="form.html" class="active" tabindex="3">Rent</a></h1>
+                </nav>
+            </div>
+        </header>
+<!-- Page Content -->
+        <h2>Rental Form</h2>
+        <h1>Please fill this form out to request a rental:</h1>
+        <form action="form.php" method="POST">
+            <fieldset id="rentalinfo">
+                <legend><h2>Rental Information</h2></legend>
+                <p>Keep in mind you can only rent 5 products at a time.</p>
+<!-- Rental 1 -->                  
+                <h4>Rental 1:</h4>
+                <p>
+                    <label for="productname1">Product Name:</label>
+                    <input type="text" name="productname1" id="rentalnames" autofocus>
+                </p>
+                <input type="radio" name="rent1" value="vhs1">
+                <label for="rent1">VHS</label>
+                
+                <input type="radio" name="rent1" value="dvd1">
+                <label for="rent1">DVD</label>
+                
+                <input type="radio" name="rent1" value="game1">
+                <label for="rent1">Game</label>
+<!-- Rental 2 -->                
+                <h4>Rental 2:</h4>
+                <p>
+                    <label for="productname2">Product Name:</label>
+                    <input type="text" name="productname2" id="rentalnames">
+                </p>
+                <input type="radio" name="rent2" value="vhs2">
+                <label for="rent2">VHS</label>
+                
+                <input type="radio" name="rent2" value="dvd2">
+                <label for="rent2">DVD</label>
+                
+                <input type="radio" name="rent2" value="game2">
+                <label for="rent2">Game</label>
+<!-- Rental 3 -->                  
+                <h4>Rental 3:</h4>
+                <p>
+                    <label for="productname3">Product Name:</label>
+                    <input type="text" name="productname3" id="rentalnames">
+                </p>
+                <input type="radio" name="rent3" value="vhs3">
+                <label for="rent3">VHS</label>
+                
+                <input type="radio" name="rent3" value="dvd3">
+                <label for="rent3">DVD</label>
+                
+                <input type="radio" name="rent3" value="game3">
+                <label for="rent3">Game</label>
+                <h1 class="schedulepickup">Schedule Pickup</h1>
+                <p>Schedule a pickup time below and well have your rentals ready for you when you enter the store.</p>
+                <label for="pickuptime">Pickup Time:</label>
+                <input type="datetime-local" name="pickuptime" id="pickuptime">
+<!-- Contact Information -->                
+            </fieldset>
+            <fieldset id="contactinfo">
+                <legend><h2>Contact Information</h2></legend>
+                <p>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname" id="name" placeholder="e.g. John" required>
+                </p>
+                <p>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname" id="name" placeholder="e.g. Smith" required>
+                </p>
+                <p>
+                    <label for="address">Address:</label>
+                    <input type="text" name="address" id="address" placeholder="e.g. 315 South Ward Street" required>
+                </p>
+                <p>
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="email" id="email" placeholder="e.g. example@gmail.com, etc." required>
+                </p>
+                <p>
+                    <label for="phonenumber">Phone Number:</label>
+                    <input type="tel" name="phonenumber" id="phonenumber" placeholder="e.g. (###)-###-####" required>
+                </p>
+            </fieldset>
+            <fieldset id="otherinfo">
+                <legend><h2>Other Information</h2></legend>
+                <p>
+                    <label for="">Click here if you would like to recieve weekly news events and alerts.</label>
+                    <input type="checkbox" name="alerts" id="alerts">
+                </p>
+                <p>
+                    <label for="suggestions">Any Suggestions:</label>
+                    <textarea name="suggestions" id="suggestions" placeholder="Type suggestions here..."></textarea>
+                </p>
+            </fieldset>
+            <input type="submit" name="submit" id="submit" value="Submit">
+        </form>
+    </body>
+    
+    <footer>
+        <small>&copy; Video Revelation &#124; <a href="sitemap.html">Sitemap</a></small>
+    </footer>
+</html>

@@ -1,0 +1,50 @@
+html {
+    border: 10px solid red;
+}
+p.red {
+    color: red;
+}
+input.required {
+    border: 1px solid green;
+}
+h2 {
+    color: orange;
+    font-size: 35px;
+}
+h2.center {
+    color: orange;
+    font-size: 35px;
+    text-align: center;
+}
+h1.mainheading {
+    color: blue;
+    text-align: center;
+    font-size: 45px;
+    font-style: oblique;
+    border: 1px solid red;
+}
+p.rightalign {
+    text-align: right;
+}
+#logo {
+    text-align: center;
+}
+#navigation h1 {
+    display: inline;
+    text-align: right;
+    font-size: 30px;
+    border: 5px solid blue
+}
+#whoarewe {
+    text-align: center;
+}
+#locations {
+    text-align: center;
+}
+#articles h1 {
+    text-align: center;
+}
+table {
+    text-align: center;
+    
+}

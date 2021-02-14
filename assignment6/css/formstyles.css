@@ -1,0 +1,9 @@
+input[type="text"] {
+    padding: 3px;
+}
+#name {
+    border: 1px solid green;
+}
+textarea {
+    width: 400px;
+}

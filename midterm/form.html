@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!--
+Sports Junction
+Author: Gage Vail
+Date: 10/24/2016
+
+Filename: form.html
+-->
+        <title>Sports Junction - About You</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <h1 alt="logo"><a href="index.html"><img src="img/sportsjunctionlogo.jpg" width="385" height="135"></a></h1>
+            </div>
+<!-- Navigation -->
+            <div id="navigation">
+                <nav>
+                    <h1><a href="index.html">Home</a></h1>
+                    <h1><a href="about.html">About Us</a></h1>
+                    <h1><a href="products.html">Products</a></h1>
+                    <h1><a href="news.html">News and Events</a></h1>
+                    <h1><a href="form.html" class="active">About You</a></h1>
+                </nav>
+            </div>
+        </header>
+<!-- Page Content -->
+        <h1 class="mainheading">About You</h1>
+        <h2>Fill out the form below for:</h2>
+        <ul>
+            <li>Order tracking information</li>
+            <li>Product updates</li>
+            <li>News and event notices</li>
+            <li>Product offers</li>
+        </ul>
+        <p><small>&#42;Textbox's in green are required.</small></p>
+        <form action="form.php" method="POST">
+            <fieldset id="createlogin">
+                <legend><h2>Login Details</h2></legend>
+                <p>
+                    <label for="customerid">Customer ID:</label>
+                    <input type="text" name="customerid" id="customerid" placeholder="e.g. 000-000-000" class="required" required>
+                    <details>This was given to you during your first visit at one of our stores.</details>
+                </p>
+                <p>
+                    <label for="password">Create a Password:</label>
+                    <input type="password" name="password" id="password" class="required" required>
+                </p>
+            </fieldset>
+            
+            <fieldset id="personalinfo">
+                <legend><h2>Personal Information</h2></legend>
+                <p>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname" id="name" placeholder="e.g. John" class="required" required>
+                </p>
+                <p>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname" id="name" placeholder="e.g. Smith" class="required" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="e.g. example@gmail.com" class="required" required>
+                </p>
+                <p>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="e.g. (000)-000-0000" class="required" required>
+                </p>
+                <p>
+                    Preferred way to reach you?
+                    <input type="radio" name="preferred" id="email" value="email" checked>
+                    <label for="preferred">Email</label>
+                    <input type="radio" name="preferred" id="phone" value="phone">
+                    <label for="preferred">Phone</label>
+                </p>
+                <div id="address">
+                    <p>
+                        <label for="streetaddress">Street Address:</label>
+                        <input type="text" name="streetaddress" id="address" placeholder="e.g. 549 One Alley Street">
+                    </p>
+                    
+                    <p>
+                        <label for="city">City:</label>
+                        <input type="text" name="city" id="address" placeholder="e.g. Chicago">
+                    </p>
+                    
+                    <p>
+                        <label for="state">State:</label>
+                        <input type="text" name="state" id="address" placeholder="e.g. WI">
+                    </p>
+                    
+                    <p>
+                        <label for="zip">Zip Code:</label>
+                        <input type="text" name="zip" id="address" placeholder="e.g. 47848">
+                    </p>
+                </div>
+                <label for="locationvisit">Which location did you visit us?</label>
+                <input type="text" name="locationvisit" id="locationvisit">
+            </fieldset>
+            <fieldset id="other">
+                <legend><h2>Other Information</h2></legend>
+                <p>
+                    <input type="checkbox" name="newsnotices" id="newsnotices" value="newsnoticesyes">
+                    <label for="newsnotices">Check here if you would like to receive product offers.</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="productoffers" id="productoffers" value="productoffersyes">
+                    <label for="productoffers">Check here if you would like to receive news and updates.</label>
+                </p>
+            </fieldset>
+            <input type="submit" name="submit" id="submit">
+        </form>
+    </body>
+    
+    <footer>
+        <small>&copy; Sports Junction 2016 &#124; <a href="sitemap.html">Sitemap</a></small>
+    </footer>
+</html>
